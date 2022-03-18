@@ -2,10 +2,10 @@
  // FileName:        main.c
  // Program version: Dev-C++ 5.11
  // Company:         TECNM - ITCH
- // Description:     CONSTRUCTORES DE OFICIO EN C++
+ // Description:     CONSTRUCTORES DE OFICIO EN C++  -1.0-
  // Authors:         ALFREDO CHACON
  // Updated:         04/2021
- //Nota:  			EL SIGUIENTE CODIGO MUESTRA EL USO DE CONSTRUCTORES POR OFICIO O DEFAULT //             O DEFECTO
+ //Nota:  				EL SIGUIENTE CODIGO MUESTRA EL USO DE CONSTRUCTORES POR OFICIO O DEFAULT  O DEFECTO
 ************************************************************************/
 #include <iostream>
 #include <stdlib.h>
@@ -18,18 +18,14 @@ class Mascota{
 		string _sexo ;
 		int _edad ;
 	public:
-		Mascota();					//Constructor de oficio o por default (si no se declara un constructor de forma explicita, el Compilador asigna un constructor por defecto igual a este)
+		Mascota(){		//Constructor de oficio o por default (si no se declara un constructor de forma explicita, el Compilador asigna un constructor por defecto igual a este)											
+			_name = "";
+			_especie = "";
+			_sexo = "";
+			_edad = 0;
+		}
 		void muestraDatos();
 };
-/************************************************
-*    IMPLEMENTACION DE CONSTRUCTOR (INICIALIZA ATRIBUTOS DEL OBJETO)
-************************************************/
-Mascota::Mascota(){															//Por oficio o default o defecto
-	_name = "";
-	_especie = "";
-	_sexo = "";
-	_edad = 0;
-}
 		
 /************************************************
 *    METODOS
